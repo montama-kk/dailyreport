@@ -1,22 +1,29 @@
 <template>
   <div id="app">
-    <app-header/>
-    <router-view/>
-    <app-footer/>
+    <v-app id="inspire">
+      <commonNavHeader/>
+      <v-content>
+        <router-view/>
+      </v-content>
+      <!-- <v-btn fab bottom right color="pink" dark fixed @click.stop="dialog = !dialog">
+        <v-icon>add</v-icon>
+      </v-btn> -->
+      <!-- <commonFooter/> -->
+    </v-app>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import commonNavHeader from "./components/common/NavHeader";
+import commonFooter from './components/common/Footer'
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    'app-header': Header,
-    'app-footer': Footer
+    commonNavHeader,
+    commonFooter,
   }
-}
+};
 </script>
 
 <style>
