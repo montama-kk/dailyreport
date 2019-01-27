@@ -5,10 +5,10 @@
       <v-content>
         <router-view/>
       </v-content>
-      <!-- <v-btn fab bottom right color="pink" dark fixed @click.stop="dialog = !dialog">
+      <v-btn fab bottom right color="pink" dark fixed @click.stop="dialog = !dialog">
         <v-icon>add</v-icon>
-      </v-btn> -->
-      <!-- <commonFooter/> -->
+      </v-btn>
+      <commonFooter/>
     </v-app>
   </div>
 </template>

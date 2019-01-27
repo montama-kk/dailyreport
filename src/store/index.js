@@ -5,12 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    drawer: null
   },
   mutations: {
-    toggleDrawer(state) {
-      state.drawer = !state.drawer
-    }
   }
 })
 

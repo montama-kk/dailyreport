@@ -36,15 +36,33 @@ export default {
   data: () => ({
     drawer: null,
     items: [
-      { icon: "home", text: "Home" },
-      { icon: "group", text: "Group" },
-      { icon: "create", text: "Create" },
-      { icon: "settings", text: "Settings" },
-      { icon: "help", text: "Help" }
+      {
+        icon: "home",
+        text: "Home"
+      },
+      {
+        icon: "group",
+        text: "Group"
+      },
+      {
+        icon: "create",
+        text: "Create"
+      },
+      {
+        icon: "settings",
+        text: "Settings"
+      },
+      {
+        icon: "help",
+        text: "Help"
+      }
     ]
   })
 };
 </script>
 
 <style>
+.v-toolbar__content {
+  padding-left: 2px;
+}
 </style>
