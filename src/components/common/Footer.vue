@@ -30,6 +30,7 @@
 
 <style scoped>
 .v-footer {
+  margin-top: 20px;
   z-index: 4;
 }
 </style>

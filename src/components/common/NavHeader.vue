@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer fixed :clipped="$vuetify.breakpoint.mdAndUp" app v-model="drawer">
+    <v-navigation-drawer :clipped="$vuetify.breakpoint.mdAndUp" fixed app v-model="drawer" width="200">
       <v-list dense>
         <template v-for="item in items">
           <v-list-tile :key="item.text" :to="item.icon">
@@ -62,7 +62,7 @@ export default {
 </script>
 
 <style>
-.v-toolbar__content {
+.v-toolbar > .v-toolbar__content {
   padding-left: 2px;
 }
 </style>

@@ -2,12 +2,9 @@
   <div id="app">
     <v-app id="inspire">
       <commonNavHeader/>
-      <v-content>
+      <v-content app>
         <router-view/>
       </v-content>
-      <v-btn fab bottom right color="pink" dark fixed @click.stop="dialog = !dialog">
-        <v-icon>add</v-icon>
-      </v-btn>
       <commonFooter/>
     </v-app>
   </div>

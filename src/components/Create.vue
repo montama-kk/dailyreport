@@ -1,6 +1,6 @@
 <template>
   <v-container grid-list-md text-xs-left align-center>
-    <v-layout row wrap>
+    <v-layout row wrap justify-space-around>
       <v-flex xs6>
         <v-icon>create</v-icon>
         <v-textarea rows="30" solo v-model="source" :value="source"></v-textarea>
@@ -51,7 +51,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.v-content .xs6 {
+  padding: 4px 10px;
+}
+
 .markdown-body ul {
   padding-inline-start: 24px;
 }
